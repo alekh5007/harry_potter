@@ -4,24 +4,44 @@ import Characters from'../components/Characters'
 function Headerone() {
     const [items, setItems] = useState([])
 
+    const callallapidata = () => {
 
-
-
-useEffect(() => {
-  const fetchItemm = async () => {
+      axios.get('http://hp-api.herokuapp.com/api/characters/students').then(
+          (response) => {
+              console.log(response)
     
-    const result = await axios(
-      `http://hp-api.herokuapp.com/api/characters/students`
-    )
-
-   // console.log(result.data)
-
-    setItems(result.data)
+              setItems(response.data)
+          },
     
-  }
+          (error) => {
+              console.log(error)
+              //toast.warning("something went wrong");
+          }
+      )
+    }
+    
+    
+    
+    useEffect(() => {
+      callallapidata();
+    }, [])
 
-  fetchItemm()
-}, [])
+
+// useEffect(() => {
+//   const fetchItemm = async () => {
+    
+//     const result = await axios(
+//       `http://hp-api.herokuapp.com/api/characters/students`
+//     )
+
+//    // console.log(result.data)
+
+//     setItems(result.data)
+    
+//   }
+
+//   fetchItemm()
+// }, [])
     return (
         <div>
         <header className="center">

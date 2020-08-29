@@ -11,24 +11,30 @@ import Characters from'./components/Characters'
 function App() {
 const [items, setItems] = useState([])
 
+const callallapidata = () => {
+
+  axios.get('http://hp-api.herokuapp.com/api/characters').then(
+      (response) => {
+          console.log(response)
+
+          setItems(response.data)
+      },
+
+      (error) => {
+          console.log(error)
+          //toast.warning("something went wrong");
+      }
+  )
+}
 
 
 
 useEffect(() => {
-  const fetchItems = async () => {
-    
-    const result = await axios(
-      `http://hp-api.herokuapp.com/api/characters`
-    )
-
-   //  console.log(result.data)
-
-    setItems(result.data)
-    
-  }
-
-  fetchItems()
+  callallapidata();
 }, [])
+
+
+
 
   return (
     <div className='container'>

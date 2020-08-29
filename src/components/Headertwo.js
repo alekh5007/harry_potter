@@ -5,21 +5,45 @@ function Headertwo() {
 
     const [items, setItems] = useState([])
 
-     useEffect(() => {
-      const fetchItemm = async () => {
+    const callallapidata = () => {
+
+      axios.get('http://hp-api.herokuapp.com/api/characters/staff').then(
+          (response) => {
+              console.log(response)
+    
+              setItems(response.data)
+          },
+    
+          (error) => {
+              console.log(error)
+              //toast.warning("something went wrong");
+          }
+      )
+    }
+    
         
-        const result = await axios(
-          `http://hp-api.herokuapp.com/api/characters/staff`
-        )
     
-        console.log(result.data)
-    
-        setItems(result.data)
-        
-      }
-    
-      fetchItemm()
+    useEffect(() => {
+      callallapidata();
     }, [])
+
+
+
+    //  useEffect(() => {
+    //   const fetchItemm = async () => {
+        
+    //     const result = await axios(
+    //       `http://hp-api.herokuapp.com/api/characters/staff`
+    //     )
+    
+    //     console.log(result.data)
+    
+    //     setItems(result.data)
+        
+    //   }
+    
+    //   fetchItemm()
+    // }, [])
 
     return (
         <div>
