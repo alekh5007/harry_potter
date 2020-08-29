@@ -15,6 +15,7 @@ const callallapidata = () => {
 
   axios.get('http://hp-api.herokuapp.com/api/characters').then(
       (response) => {
+        console.log("app")
           console.log(response)
 
           setItems(response.data)
