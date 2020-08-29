@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/harry_potter/static/css/main.bcb16289.chunk.css",
-    "main.js": "/harry_potter/static/js/main.3d818c86.chunk.js",
-    "main.js.map": "/harry_potter/static/js/main.3d818c86.chunk.js.map",
+    "main.js": "/harry_potter/static/js/main.a61b16b1.chunk.js",
+    "main.js.map": "/harry_potter/static/js/main.a61b16b1.chunk.js.map",
     "runtime-main.js": "/harry_potter/static/js/runtime-main.3a61583a.js",
     "runtime-main.js.map": "/harry_potter/static/js/runtime-main.3a61583a.js.map",
-    "static/js/2.926b4429.chunk.js": "/harry_potter/static/js/2.926b4429.chunk.js",
-    "static/js/2.926b4429.chunk.js.map": "/harry_potter/static/js/2.926b4429.chunk.js.map",
+    "static/js/2.8e08181c.chunk.js": "/harry_potter/static/js/2.8e08181c.chunk.js",
+    "static/js/2.8e08181c.chunk.js.map": "/harry_potter/static/js/2.8e08181c.chunk.js.map",
     "index.html": "/harry_potter/index.html",
-    "precache-manifest.88b88249b86ea1deaf5e94718f8236e9.js": "/harry_potter/precache-manifest.88b88249b86ea1deaf5e94718f8236e9.js",
+    "precache-manifest.8478a947e1484c8fd289a1869262fe10.js": "/harry_potter/precache-manifest.8478a947e1484c8fd289a1869262fe10.js",
     "service-worker.js": "/harry_potter/service-worker.js",
     "static/css/main.bcb16289.chunk.css.map": "/harry_potter/static/css/main.bcb16289.chunk.css.map",
-    "static/js/2.926b4429.chunk.js.LICENSE.txt": "/harry_potter/static/js/2.926b4429.chunk.js.LICENSE.txt",
+    "static/js/2.8e08181c.chunk.js.LICENSE.txt": "/harry_potter/static/js/2.8e08181c.chunk.js.LICENSE.txt",
     "static/media/App.css": "/harry_potter/static/media/bg1.8c1b9daf.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3a61583a.js",
-    "static/js/2.926b4429.chunk.js",
+    "static/js/2.8e08181c.chunk.js",
     "static/css/main.bcb16289.chunk.css",
-    "static/js/main.3d818c86.chunk.js"
+    "static/js/main.a61b16b1.chunk.js"
   ]
 }
